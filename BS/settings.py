@@ -25,7 +25,8 @@ SECRET_KEY = '_!3=&0ga*0isp#@5f)qj5nd#8xg74of5h&!$6pm+z55!0n)ox$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS =[]
+#ALLOWED_HOSTS = ['your_laptop_ip_address', '73ee-103-166-244-58.ngrok-free.app']
 
 
 # Application definition
@@ -44,7 +45,7 @@ INSTALLED_APPS = [
     'listings',
     'accounts',
     'inquiry',
-    'crispy_forms'
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -84,9 +85,9 @@ WSGI_APPLICATION = 'BS.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'youtubetrail',
+        'NAME': 'bsdb',
         'USER': 'postgres',
-        'PASSWORD': 'katti403',
+        'PASSWORD': 'ajmal',
         'HOST': 'localhost'
     }
 }
@@ -151,3 +152,5 @@ EMAIL_HOST_PASSWORD = 'xmzvvcjeyrvpicwx'
 EMAIL_USE_TLS = True
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
